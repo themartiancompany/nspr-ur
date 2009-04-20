@@ -1,7 +1,7 @@
 # Maintainer: Alexander Baldeck <alexander@archlinux.org>
 # Contributor: Jan de Groot <jgc@archlinux.org>
 pkgname=nspr
-pkgver=4.7.3
+pkgver=4.7.4
 pkgrel=1
 pkgdesc="Netscape Portable Runtime"
 arch=(i686 x86_64)
@@ -12,7 +12,7 @@ makedepends=('zip')
 options=(!emptydirs)
 source=(ftp://ftp.mozilla.org/pub/mozilla.org/nspr/releases/v${pkgver}/src/${pkgname}-${pkgver}.tar.gz
 	nspr.pc.in)
-md5sums=('3496d6656f3e02dddc7e29f1b122b744'
+md5sums=('ec1a991fc211450085149905c5e340da'
          'bce1611f3117b53fc904cab549c09967')
 
 build() {
