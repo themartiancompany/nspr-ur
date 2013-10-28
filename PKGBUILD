@@ -3,7 +3,7 @@
 
 pkgname=nspr
 pkgver=4.10.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Netscape Portable Runtime"
 arch=(i686 x86_64)
 url="http://www.mozilla.org/projects/nspr/"
@@ -37,7 +37,6 @@ package() {
   cd $pkgname-$pkgver
   make DESTDIR="$pkgdir" install
 
-  chmod 644 "$pkgdir"/usr/lib/*.a
   ln -s nspr.pc "$pkgdir/usr/lib/pkgconfig/mozilla-nspr.pc"
   rm -r "$pkgdir"/usr/bin/{compile-et.pl,prerr.properties} \
          "$pkgdir/usr/include/nspr/md"
